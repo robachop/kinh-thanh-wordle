@@ -328,7 +328,7 @@ function App() {
     return () => window.removeEventListener("keydown", fn);
   }, [handleKey]);
 
-  const sc = { correct:{bg:"#2d5a3d",bd:"#3d7a52",tx:"#fff"}, present:{bg:"#7a5010",bd:"#b07828",tx:"#fff"}, absent:{bg:"#1a1a1a",bd:"#2a2a2a",tx:"#444"}, empty:{bg:"transparent",bd:"#252525",tx:"#ddd"} };
+  const sc = { correct:{bg:"#2d5a3d",bd:"#3d7a52",tx:"#fff"}, present:{bg:"#7a5010",bd:"#b07828",tx:"#fff"}, absent:{bg:"#2e2e2e",bd:"#484848",tx:"#888"}, empty:{bg:"rgba(255,255,255,0.06)",bd:"#3a3a3a",tx:"#ddd"} };
   const KEYS = [["Q","W","E","R","T","Y","U","I","O","P"],["A","S","D","F","G","H","J","K","L"],["ENTER","Z","X","C","V","B","N","M","DEL"]];
   const kBg = {correct:"#2d5a3d",present:"#7a5010",absent:"#1a1a1a",unused:"#252525"};
   const kTx = {correct:"#adf",present:"#fda",absent:"#333",unused:"#bbb"};
@@ -447,6 +447,14 @@ function App() {
         ))}
       </div>
       <div style={{height:16}}/>
+      <div style={{width:"100%",maxWidth:370,marginTop:8,paddingTop:14,borderTop:"1px solid rgba(255,255,255,0.1)",textAlign:"center",fontSize:12,color:"rgba(255,255,255,0.4)",lineHeight:1.8}}>
+        <div>© 2026</div>
+        <div style={{marginTop:6}}>
+          📧 <a href="mailto:ductinsongdong@icloud.com" style={{color:"rgba(255,255,255,0.55)",textDecoration:"none"}}>ductinsongdong@icloud.com</a>
+        </div>
+        <div style={{fontSize:11,marginTop:4,color:"rgba(255,255,255,0.25)"}}>Phản hồi & góp ý xin liên hệ qua email</div>
+      </div>
+      <div style={{height:24}}/>
       <style>{`@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}`}</style>
     </div>
   );
@@ -454,12 +462,5 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
 </script>
-<div style="margin-top:24px; padding:16px; border-top:1px solid rgba(255,255,255,0.15); text-align:center; font-size:12px; color:rgba(255,255,255,0.5); line-height:1.8; background:#080c10;">
-  <div>© 2026</div>
-  <div style="margin-top:6px;">
-    📧 <a href="mailto:ductinsongdong@icloud.com" style="color:rgba(255,255,255,0.6); text-decoration:none;">ductinsongdong@icloud.com</a>
-  </div>
-  <div style="font-size:11px; margin-top:4px; color:rgba(255,255,255,0.35);">Phản hồi & góp ý xin liên hệ qua email</div>
-</div>
 </body>
 </html>
